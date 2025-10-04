@@ -42,7 +42,7 @@ function render() {
     list.appendChild(div);
   });
 
-  updateCounter(); // обновляем счетчик
+  updateCounter(); 
 }
 
 function updateCounter() {
@@ -60,5 +60,6 @@ function addTask() {
 
 addBtn.onclick = addTask;
 filters.forEach(f => f.onchange = render);
+
 
 render();
